@@ -8,9 +8,9 @@ namespace PalindromeExercise
 {
     public class Palindrome
     {
-        public bool isPalindrome(string str)
+        public bool IsPalindrome(string str)
         {
-            string[] strArr = str.Split();
+            string[] strArr = str.ToLower().Split();
             string[] strArrRev = strArr.Reverse().ToArray();
 
             for (int i = 0; i < strArr.Length; i++)
